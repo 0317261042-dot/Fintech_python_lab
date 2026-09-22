@@ -1,0 +1,18 @@
+ho_ten = input("Nhập họ tên khách hàng: ")
+so_dien_thoai = input("Nhập số điện thoại: ")
+cccd = input("Nhập số CCCD: ")
+so_tien_nap = int(input("Nhập số tiền nạp ban đầu (VND): "))
+
+phi_mo_vi = 50000
+so_du = so_tien_nap - phi_mo_vi
+
+bon_so_cuoi_cccd = cccd[-4:]
+
+print("\n========== BIÊN LAI KHỞI TẠO VÍ ==========")
+print("Họ tên:", ho_ten.upper())
+print("Số điện thoại:", so_dien_thoai)
+print("4 số cuối CCCD:", bon_so_cuoi_cccd)
+print("Số tiền nạp:", f"{so_tien_nap:,} VND")
+print("Phí mở ví:", f"{phi_mo_vi:,} VND")
+print("Số dư khả dụng:", f"{so_du:,} VND")
+print("==========================================")
